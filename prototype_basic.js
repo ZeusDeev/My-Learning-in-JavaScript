@@ -26,3 +26,29 @@ const person2 = new Persona("Emmanuel", 22)
 
 person1.saludar()
 person2.saludar()
+
+
+// Ejemplo con una propiedad en el prototipo
+
+/*
+Por otro lado, podemos crear una propiedad haciendo uso del prototype, es decir
+añadir una propiedad a nuestra funcion constructora, sin necesidad de añadirla,
+permitiendo que en cada instancia esta misma se comparta para ambos
+
+*/
+
+function Animal (nombre) {
+    this.nombre = nombre
+}
+
+
+Animal.prototype.tipo = "Mamifero"
+
+
+const perro = new Animal("Juan Carlos")
+console.log(perro.tipo)
+
+const gato =  new Animal("Gustavo cereti")
+console.log(gato.tipo)
+
+
