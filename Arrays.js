@@ -33,6 +33,9 @@ console.log(animales)
 animales.pop() // pop elimina el ultimo elemento de nuestro array
 console.log(animales)
 
+animales.shift()
+console.log(animales) // Elimina el primer elemento de nuestro array
+
 //Podemos iterar sobre length para ver lo que hay en nuestro array
 
 for(i=0; i < animales.length; i++) {
